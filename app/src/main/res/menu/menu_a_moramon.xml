@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".a_moramon">
+    <item android:id="@+id/action_update" android:title="@string/action_update"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_stop" android:title="@string/action_stop"
+        android:orderInCategory="150" app:showAsAction="never" />
+    <item android:id="@+id/action_modowear" android:title="@string/action_modowear"
+        android:orderInCategory="200" app:showAsAction="never" />
+    <item android:id="@+id/action_privacypolicy" android:title="@string/action_privacypolicy"
+        android:orderInCategory="250" app:showAsAction="never" />
+    <item android:id="@+id/action_about" android:title="@string/action_about"
+        android:orderInCategory="300" app:showAsAction="never" />
+</menu>

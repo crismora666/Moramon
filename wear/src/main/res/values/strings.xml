@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Moramon</string>
+    <string name="hello_round">Wait Phone to Connect!</string>
+    <string name="hello_square">Wait Phone to Connect!</string>
+</resources>

@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sekai_keystore {
+            keyAlias 'sekaiec'
+            keyPassword '549854'
+            storeFile file('E:/datos/Documentos/Proys_Android/sekai_keystore')
+            storePassword '1982031718tt'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "ec.sekai.moramon"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 13
+        versionName '1.4.13'
+        signingConfig signingConfigs.sekai_keystore
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.google.android.gms:play-services:7.3.0'
+    wearApp project(':wear')
+}
